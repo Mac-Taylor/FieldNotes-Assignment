@@ -1371,37 +1371,37 @@ pre {
       .column-block > :last-child {
         margin-bottom: 0; } }
 
-header {
+.top, .nav {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto; }
-  header::before, header::after {
+  .top::before, .top::after, .nav::before, .nav::after {
     display: table;
     content: ' '; }
-  header::after {
+  .top::after, .nav::after {
     clear: both; }
-  header h1 {
+  .top h1, .nav h1 {
     width: 50%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
     text-align: center; }
     @media print, screen and (min-width: 40em) {
-      header h1 {
+      .top h1, .nav h1 {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    header h1:last-child:not(:first-child) {
+    .top h1:last-child:not(:first-child), .nav h1:last-child:not(:first-child) {
       float: right; }
-  header p {
+  .top p, .nav p {
     width: 16.66667%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
     @media print, screen and (min-width: 40em) {
-      header p {
+      .top p, .nav p {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    header p:last-child:not(:first-child) {
+    .top p:last-child:not(:first-child), .nav p:last-child:not(:first-child) {
       float: right; }
 
 /*# sourceMappingURL=style.css.map */
