@@ -1372,6 +1372,36 @@ pre {
         margin-bottom: 0; } }
 
 header {
-  display: inline-block; }
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  header::before, header::after {
+    display: table;
+    content: ' '; }
+  header::after {
+    clear: both; }
+  header h1 {
+    width: 50%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    text-align: center; }
+    @media print, screen and (min-width: 40em) {
+      header h1 {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    header h1:last-child:not(:first-child) {
+      float: right; }
+  header p {
+    width: 16.66667%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      header p {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    header p:last-child:not(:first-child) {
+      float: right; }
 
 /*# sourceMappingURL=style.css.map */

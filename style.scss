@@ -3,5 +3,13 @@
 @include foundation-grid;
 
 header {
-    display: inline-block;
+    @include grid-row();
+        // text-align: center;
+    h1 {
+    @include grid-column(6);
+    text-align: center;
+    }
+    p {
+        @include grid-column(2)
+    }
 }
