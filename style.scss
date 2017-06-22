@@ -2,9 +2,16 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-.top, .nav {
+header {
     @include grid-row();
-        // text-align: center;
+        text-align: center;
+    .top {
+        @include grid-column (12);
+    }
+    .nav {
+        @include grid-row();
+        text-align: center;
+    }
     h1 {
     @include grid-column(6);
     text-align: center;

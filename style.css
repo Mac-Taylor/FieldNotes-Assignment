@@ -1371,37 +1371,59 @@ pre {
       .column-block > :last-child {
         margin-bottom: 0; } }
 
-.top, .nav {
+header {
   max-width: 75rem;
   margin-right: auto;
-  margin-left: auto; }
-  .top::before, .top::after, .nav::before, .nav::after {
+  margin-left: auto;
+  text-align: center; }
+  header::before, header::after {
     display: table;
     content: ' '; }
-  .top::after, .nav::after {
+  header::after {
     clear: both; }
-  .top h1, .nav h1 {
+  header .top {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem; }
+    @media print, screen and (min-width: 40em) {
+      header .top {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    header .top:last-child:not(:first-child) {
+      float: right; }
+  header .nav {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+    header .nav::before, header .nav::after {
+      display: table;
+      content: ' '; }
+    header .nav::after {
+      clear: both; }
+  header h1 {
     width: 50%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem;
     text-align: center; }
     @media print, screen and (min-width: 40em) {
-      .top h1, .nav h1 {
+      header h1 {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    .top h1:last-child:not(:first-child), .nav h1:last-child:not(:first-child) {
+    header h1:last-child:not(:first-child) {
       float: right; }
-  .top p, .nav p {
+  header p {
     width: 16.66667%;
     float: left;
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
     @media print, screen and (min-width: 40em) {
-      .top p, .nav p {
+      header p {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    .top p:last-child:not(:first-child), .nav p:last-child:not(:first-child) {
+    header p:last-child:not(:first-child) {
       float: right; }
 
 /*# sourceMappingURL=style.css.map */
